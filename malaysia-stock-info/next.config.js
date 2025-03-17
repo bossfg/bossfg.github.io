@@ -6,7 +6,12 @@ const nextConfig = {
     unoptimized: true,
   },
   // 只在生产环境使用 basePath 和 assetPrefix
-  ...(process.env.NODE_ENV === "production" ? {} : {}),
+  ...(process.env.NODE_ENV === "production"
+    ? {
+        basePath: "/malaysia-stock-info",
+        assetPrefix: "/malaysia-stock-info/",
+      }
+    : {}),
 };
 
 module.exports = nextConfig;
