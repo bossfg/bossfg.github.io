@@ -1,0 +1,34 @@
+{
+  "name": "malaysia-stock-info",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "18.20.7"
+  },
+  "scripts": {
+    "dev": "npx -p node@18.20.7 next dev --turbopack",
+    "dev:node16": "cross-env NODE_VERSION=16.14.0 npx -p node@16.14.0 next dev --turbopack",
+    "build": "npx -p node@18.20.7 next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/html2canvas": "^0.5.35",
+    "html2canvas": "^1.4.1",
+    "next": "15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
